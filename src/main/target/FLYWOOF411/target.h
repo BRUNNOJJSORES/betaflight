@@ -61,8 +61,8 @@
 
 #define USE_I2C_DEVICE_1
 #define I2C_DEVICE              (I2CDEV_1)
-#define I2C1_SCL                PB8        // SCL pad
-#define I2C1_SDA                PB9        // SDA pad
+//undefine I2C1_SCL
+//undefine I2C1_SDA
 #define BARO_I2C_INSTANCE       (I2CDEV_1)
 
 #define USE_BARO                          //External, connect to I2C1
@@ -86,6 +86,10 @@
 #define USE_UART2
 #define UART2_RX_PIN            PA3
 #define UART2_TX_PIN            PA2
+
+#define USE_UART3
+#define UART3_RX_PIN            PB8        // SCL pad
+#define UART3_TX_PIN            PB9        // SDA pad
 
 #define USE_SOFTSERIAL1
 #define USE_SOFTSERIAL2
@@ -115,8 +119,8 @@
 
 // *************** ADC *****************************
 #define USE_ADC
-#define ADC_INSTANCE         ADC1  
-#define ADC1_DMA_OPT            0  // DMA 2 Stream 0 Channel 0 
+#define ADC_INSTANCE         ADC1
+#define ADC1_DMA_OPT            0  // DMA 2 Stream 0 Channel 0
 
 #define VBAT_ADC_PIN            PA0
 #define CURRENT_METER_ADC_PIN   PA1
@@ -127,7 +131,7 @@
 
 #define USE_LED_STRIP
 
-#define ENABLE_DSHOT_DMAR       DSHOT_DMAR_ON									
+#define ENABLE_DSHOT_DMAR       DSHOT_DMAR_ON
 #define USE_PINIO
 #define PINIO1_PIN              PB5  // VTX  switcher
 //#define PINIO2_PIN              PA15 // Camera switcher
@@ -145,4 +149,3 @@
 
 #define USABLE_TIMER_CHANNEL_COUNT 10
 #define USED_TIMERS             ( TIM_N(1)|TIM_N(2)|TIM_N(3)|TIM_N(5)|TIM_N(9) )
-
