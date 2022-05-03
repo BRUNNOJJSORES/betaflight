@@ -88,8 +88,8 @@
 #define UART2_TX_PIN            PA2
 
 #define USE_UART3
-#define UART3_RX_PIN            PB8        // SCL pad
-#define UART3_TX_PIN            PB9        // SDA pad
+#define UART3_RX_PIN            PB8
+#define UART3_TX_PIN            PB9
 
 #define USE_SOFTSERIAL1
 #define USE_SOFTSERIAL2
